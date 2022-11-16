@@ -4,7 +4,7 @@
       "id": "87d6486e-2449-4b0f-b38f-df1855efbec4",
       "title": "0. HOW TO USE THE BOARD",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This board guides you to a suitable hypothesis testing approach based on your task.\\n\\nGo through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Read the instructions on each \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"card\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Follow the arrows on the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"card most suitable to your task OR Delete \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"cards that do not relate to your task to remove possible paths\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"At the end of the tree, you will reach a \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"card that specifies a suitable hypothesis testing approach for your task\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"}]}"
+        "message": "This board guides you to a suitable hypothesis testing approach based on your task.\n\n1. Go through the yellow cards in order\n1. Read the instructions on each yellow card\n1. Follow the arrows on the green card most suitable to your task OR Delete green cards that do not relate to your task to remove possible paths\n1. At the end of the tree, you will reach a blue card that specifies a suitable hypothesis testing approach for your task\n"
       },
       "edge_connections": [
         {
@@ -25,9 +25,9 @@
     },
     {
       "id": "34361a84-5462-4c93-84c9-14dd5d3f786f",
-      "title": "3. Hypothesis Testing Approach",
+      "title": "3. HYPOTHESIS TESTING APPROACH",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Based on the arrows you have follow/deleted, you may decide how to test your hypothesis:\\nClassical Statistical hypothesis testing\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Causal inference\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Validity of equation\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Multiple approaches could potentially be used in conjunction.\\n\"}]}"
+        "message": "Based on the arrows you have follow/deleted, you may decide how to test your hypothesis:\n1. Classical Statistical hypothesis testing\n1. Causal inference\n1. Validity of equation\n\n## \nMultiple approaches could potentially be used in conjunction.\n"
       },
       "edge_connections": [
         {
@@ -60,9 +60,9 @@
     },
     {
       "id": "0f089fc0-2d7b-41cd-9822-7a01768047b3",
-      "title": "Classical Hypothesis Testing",
+      "title": "CLASSICAL HYPOTHESIS TESTING",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"A method of statistical inference used to decide if the data sufficiently support a particular hypothesis. Statistical inference is useful in determining correlation, but does not imply causation.\\n\\nMore simply: to show significant statistical correlation between x and y\\n\\nAfter establishing statistical relationships, you may want to test the causal relationships of these features. Causal inference would be suitable as a next step.\\n\"}]}"
+        "message": "A method of statistical inference used to decide if the data sufficiently support a particular hypothesis. Statistical inference is useful in determining correlation, but does not imply causation.\n\nMore simply: to show significant statistical correlation between x and y\n\nAfter establishing statistical relationships, you may want to test the causal relationships of these features. Causal inference would be suitable as a next step.\n"
       },
       "edge_connections": [
         {
@@ -95,9 +95,9 @@
     },
     {
       "id": "9dd8b1b0-c02c-415c-acc1-3bed497f9d45",
-      "title": "Causal inference",
+      "title": "CAUSAL INFERENCE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This is suitable both with and without domain knowledge about the data, allowing us to model or automatically generate causal relationships that reflect the causal structure.\\n\\nWe can define causal relationships that reflect physical laws, experiences or assumptions.\\n\\nThere are two subtemplates that may be used:\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Structures\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The template notebooks could generate and evaluate how well the causal structure fits the data. The automatic approach is computationally slow with many features.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Estimates\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"With a suitable causal structure, we could obtain causal estimates of the effect of a treatment feature on an outcome variable and evaluate its statistical robustness as a probable estimate using refutation tests.\\n\\nAfter establishing causal relationships, you may want to test if the features can be expressed as a mathematical equation. The equation goodness of fit would be suitable as a next step.\\n\"}]}"
+        "message": "This is suitable both with and without domain knowledge about the data, allowing us to model or automatically generate causal relationships that reflect the causal structure.\n\nWe can define causal relationships that reflect physical laws, experiences or assumptions.\n\nThere are two subtemplates that may be used:\n\n# Causal Structures\nThe template notebooks could generate and evaluate how well the causal structure fits the data. The automatic approach is computationally slow with many features.\n\n# Causal Estimates\nWith a suitable causal structure, we could obtain causal estimates of the effect of a treatment feature on an outcome variable and evaluate its statistical robustness as a probable estimate using refutation tests.\n\nAfter establishing causal relationships, you may want to test if the features can be expressed as a mathematical equation. The equation goodness of fit would be suitable as a next step.\n"
       },
       "edge_connections": [
         {
@@ -146,9 +146,9 @@
     },
     {
       "id": "f36e5fd3-01fc-42f1-935f-5438ff89ba74",
-      "title": "Equation Goodness of Fit",
+      "title": "EQUATION GOODNESS OF FIT",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"To model the relationships between parameters as an equation, and testing how well this equation fits the data.\\nThis may be tackled with a goodness of fit test, with observed and expected values from the equation by building Halerium Inference graphs with specified equations and evaluate their performance.\\n\\nMore simply: does equation x significantly reflect the data\\nEg. y = x^2 + 2\\n\"}]}"
+        "message": "To model the relationships between parameters as an equation, and testing how well this equation fits the data.\nThis may be tackled with a goodness of fit test, with observed and expected values from the equation by building Halerium Inference graphs with specified equations and evaluate their performance.\n\nMore simply: does equation x significantly reflect the data\nEg. y = x^2 + 2\n"
       },
       "edge_connections": [
         {
@@ -181,9 +181,9 @@
     },
     {
       "id": "dc4040bd-c76d-46ca-ae4a-87aa3084ba11",
-      "title": "2. How Much Domain knowledge do you have?",
+      "title": "2. HOW MUCH DOMAIN KNOWLEDGE DO YOU HAVE?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The amount of domain knowledge may determine which approach is most suitable.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"None/Minimal\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"With no or minimal domain knowledge about the data, we are unable to model suitable causal structures or equation. \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"Classical statistical hypothesis testing\"},{\"insert\":\" still provides useful tests to work with just the data in determining statistically significant correlation between parameters.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"causal inference\"},{\"insert\":\" template provides a method to generate possible causal structures and evaluate their fit to the data without prior dependency input.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Structures\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Eg. A affects B and C, B affects C,\\nKnowing the relationships and dependencies between parameters would allow us to model a causal structure. These relationships could be known physical laws, from experience, or assumptions to be verified.\\n\\nWe would be able to use \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"causal inference\"},{\"insert\":\" on the model to determine causal effect estimates and fit of the causal model on the data.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Equations\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Eg. y = x^2 + 1\\nEquations that link parameters with mathematical processes would allow us to build a matrix of expected values from the equations. By comparing to the true observed values, we can determine the fit of the equation on the data.\\n\"}]}"
+        "message": "The amount of domain knowledge may determine which approach is most suitable.\n\n# None/Minimal\nWith no or minimal domain knowledge about the data, we are unable to model suitable causal structures or equation. Classical statistical hypothesis testing still provides useful tests to work with just the data in determining statistically significant correlation between parameters.\n\nThe causal inference template provides a method to generate possible causal structures and evaluate their fit to the data without prior dependency input.\n\n# Causal Structures\nEg. A affects B and C, B affects C,\nKnowing the relationships and dependencies between parameters would allow us to model a causal structure. These relationships could be known physical laws, from experience, or assumptions to be verified.\n\nWe would be able to use causal inference on the model to determine causal effect estimates and fit of the causal model on the data.\n\n# Equations\nEg. y = x^2 + 1\nEquations that link parameters with mathematical processes would allow us to build a matrix of expected values from the equations. By comparing to the true observed values, we can determine the fit of the equation on the data.\n"
       },
       "edge_connections": [
         {
@@ -220,7 +220,7 @@
     },
     {
       "id": "e522161c-1897-43b4-8e40-f2bbef39bf68",
-      "title": "None",
+      "title": "NONE",
       "type_specific": {
         "message": ""
       },
@@ -260,7 +260,7 @@
     },
     {
       "id": "640d3396-989d-43c5-8da2-50cbd83782be",
-      "title": "Equations",
+      "title": "EQUATIONS",
       "type_specific": {
         "message": ""
       },
@@ -296,7 +296,7 @@
     },
     {
       "id": "bc9dbe4e-053b-4ffc-8547-55059b245fd8",
-      "title": "Causal structure",
+      "title": "CAUSAL STRUCTURE",
       "type_specific": {
         "message": ""
       },
@@ -332,9 +332,9 @@
     },
     {
       "id": "978d7885-5b08-4fc2-83b6-9997882f84ab",
-      "title": "Causal Structures",
+      "title": "CAUSAL STRUCTURES",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"You may specify or generate causal structures with the features in the data. It will then be trained and tested to determine the fit of the structure with the data.\\n\\nMore simply: to show how well a modelled causal structure fits the data.\\n\\nYou may use a suitable causal structure obtained here to obtain a causal estimate.\\n\"}]}"
+        "message": "You may specify or generate causal structures with the features in the data. It will then be trained and tested to determine the fit of the structure with the data.\n\nMore simply: to show how well a modelled causal structure fits the data.\n\nYou may use a suitable causal structure obtained here to obtain a causal estimate.\n"
       },
       "edge_connections": [
         {
@@ -359,9 +359,9 @@
     },
     {
       "id": "a3f6101d-65a0-40f6-b5c3-9452a4ae3974",
-      "title": "causal Estimates",
+      "title": "CAUSAL ESTIMATES",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"With a causal structure (possibly obtained previously from the causal structures template), you may identify the causal effect of a treatment feature on an outcome variable in the causal structure, while using statistical tests to determine the statistical validity of the estimate.\\n\\nMore simply: to estimate significant causal effects between x and y\\n\"}]}"
+        "message": "With a causal structure (possibly obtained previously from the causal structures template), you may identify the causal effect of a treatment feature on an outcome variable in the causal structure, while using statistical tests to determine the statistical validity of the estimate.\n\nMore simply: to estimate significant causal effects between x and y\n"
       },
       "edge_connections": [
         {
@@ -386,9 +386,9 @@
     },
     {
       "id": "03d15816-2754-4527-9df2-4714364bc784",
-      "title": "1. What hypothesis are you testing?",
+      "title": "1. WHAT HYPOTHESIS ARE YOU TESTING?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This template aims to answer questions related to: is x affected by/related to y? \\n\\nThere are different types of hypothesis that may be tested. Multiple hypotheses may be tested on each feature/set of features.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Associative Hypothesis\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Predicts if variables are linked but not whether one variable directly impacts the other variable.\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Simple Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Predicts a correlation between an independent and dependent variable. \\nEg. Dogs eat more in summer than winter\\n\\nComplex Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Similar to simple hypothesis but contains multiple independent and dependent variables.\\nEg. Age and weight increases your chances of getting diabetes and heart disease\\n\\nNull Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Predicts that there is no significant relationship between test variables. A simple or complex hypothesis may be phrased as a null hypothesis, but it cannot establish the direction of a relationship, only its existence.\\nEg. Dogs eat the same in summer and winter\\n\\nAlternative Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Anything other than the null hypothesis, it will disprove the null hypothesis. In practice, it is established by testing and possibly rejecting the null hypothesis.\\nEg. (Against null hypothesis above) Dogs do not eat the same in summer and winter\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Hypothesis\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Predicts that variables are not only associated, but changes in one variable will cause changes in another. This may require some knowledge of the causal structure.\\n\\nDirectional Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Makes a prediction about the positivity or negativity of the effect of an intervention prior to the test.\\nEg. Adding a charge to plastic bags lead to an increase in uptake of reusable bags.\\n\\nNon-Directional Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Similar to directional hypothesis but does not specify the predicted direction. This may be understood as testing if the causal relation holds.\\nEg. Adding a charge to plastic bags lead to a change in uptake of reusable bags.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Formulaic Hypothesis\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Predicts that variables are linked in a certain mathematical relationship, and changes in the variables are explained by that formula.\\nEg. Force = mass * acceleration\\n\\n\\nEach hypothesis may have different pre-requisites in terms of domain knowledge and complexity of the features, which is explored further in this board.\\n\"}]}"
+        "message": "This template aims to answer questions related to: is x affected by/related to y? \n\nThere are different types of hypothesis that may be tested. Multiple hypotheses may be tested on each feature/set of features.\n\n# Associative Hypothesis\nPredicts if variables are linked but not whether one variable directly impacts the other variable.\n## \n## Simple Hypothesis\nPredicts a correlation between an independent and dependent variable. \nEg. Dogs eat more in summer than winter\n\n## Complex Hypothesis\nSimilar to simple hypothesis but contains multiple independent and dependent variables.\nEg. Age and weight increases your chances of getting diabetes and heart disease\n\n## Null Hypothesis\nPredicts that there is no significant relationship between test variables. A simple or complex hypothesis may be phrased as a null hypothesis, but it cannot establish the direction of a relationship, only its existence.\nEg. Dogs eat the same in summer and winter\n\n## Alternative Hypothesis\nAnything other than the null hypothesis, it will disprove the null hypothesis. In practice, it is established by testing and possibly rejecting the null hypothesis.\nEg. (Against null hypothesis above) Dogs do not eat the same in summer and winter\n## \n# Causal Hypothesis\nPredicts that variables are not only associated, but changes in one variable will cause changes in another. This may require some knowledge of the causal structure.\n\n## Directional Hypothesis\nMakes a prediction about the positivity or negativity of the effect of an intervention prior to the test.\nEg. Adding a charge to plastic bags lead to an increase in uptake of reusable bags.\n\n## Non-Directional Hypothesis\nSimilar to directional hypothesis but does not specify the predicted direction. This may be understood as testing if the causal relation holds.\nEg. Adding a charge to plastic bags lead to a change in uptake of reusable bags.\n\n# Formulaic Hypothesis\nPredicts that variables are linked in a certain mathematical relationship, and changes in the variables are explained by that formula.\nEg. Force = mass * acceleration\n\n\nEach hypothesis may have different pre-requisites in terms of domain knowledge and complexity of the features, which is explored further in this board.\n"
       },
       "edge_connections": [
         {
@@ -429,7 +429,7 @@
     },
     {
       "id": "010fc234-385a-4393-8dda-8e12ce758b54",
-      "title": "Associative",
+      "title": "ASSOCIATIVE",
       "type_specific": {
         "message": ""
       },
@@ -465,7 +465,7 @@
     },
     {
       "id": "edca9dd2-0634-4e3b-9ee2-0275c14b0848",
-      "title": "causal",
+      "title": "CAUSAL",
       "type_specific": {
         "message": ""
       },
@@ -497,7 +497,7 @@
     },
     {
       "id": "58938f8f-8ea6-44a2-ae63-4c6b71484231",
-      "title": "Formulaic",
+      "title": "FORMULAIC",
       "type_specific": {
         "message": ""
       },
@@ -529,9 +529,9 @@
     },
     {
       "id": "1c572929-d45a-42d3-ab21-9e996659f5b8",
-      "title": "5. What next?",
+      "title": "5. WHAT NEXT?",
       "type_specific": {
-        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"Establish more complex relationships\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"After establishing a certain relationship, you may use that new knowledge to test if more complex relationships may be established using other hypothesis testing templates. A possible workflow may be:\\n\\nStatistical relationship -> Causal relationship -> Equation\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Regression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"After establishing a certain relationship, you may be able to build a regression model for prediction of data with the features. \\n\\nIn the '+' menu in the file browser on the top left, you may add another hypothesis testing or a regression template.\\n\"}]}"
+        "message": "# Establish more complex relationships\nAfter establishing a certain relationship, you may use that new knowledge to test if more complex relationships may be established using other hypothesis testing templates. A possible workflow may be:\n\nStatistical relationship -> Causal relationship -> Equation\n\n# Regression\nAfter establishing a certain relationship, you may be able to build a regression model for prediction of data with the features. \n\nIn the '+' menu in the file browser on the top left, you may add another hypothesis testing or a regression template.\n"
       },
       "edge_connections": [
         {
@@ -552,9 +552,9 @@
     },
     {
       "id": "c7332462-466e-49a8-a8d8-e68cde716f75",
-      "title": "4. Add template using add template wizard",
+      "title": "4. ADD TEMPLATE USING ADD TEMPLATE WIZARD",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"After you have selected a suitable approach, you may add the template for that approach.\\n\\nIn the '+' menu in the file browser on the top left, select the hypothesis testing approach template.\\n\\nThe available selections are:\\n1-classical\\n2-causal\\n3-equation\\n\"}]}"
+        "message": "After you have selected a suitable approach, you may add the template for that approach.\n\nIn the '+' menu in the file browser on the top left, select the hypothesis testing approach template.\n\nThe available selections are:\n1-classical\n2-causal\n3-equation\n"
       },
       "edge_connections": [
         {
@@ -587,7 +587,7 @@
     },
     {
       "id": "8390cd6b-a5d8-445f-91a2-c9f8afba8b1a",
-      "title": "Test more complex hypothesis",
+      "title": "TEST MORE COMPLEX HYPOTHESIS",
       "type_specific": {
         "message": ""
       },
@@ -619,7 +619,7 @@
     },
     {
       "id": "3386e025-7feb-4fed-add5-7534b5a1dded",
-      "title": "Test more complex hypothesis",
+      "title": "TEST MORE COMPLEX HYPOTHESIS",
       "type_specific": {
         "message": ""
       },

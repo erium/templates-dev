@@ -2,9 +2,9 @@
   "nodes": [
     {
       "id": "2750e57e-29e7-4976-9af6-3198963ef663",
-      "title": "2. What is the goal?",
+      "title": "2. WHAT IS THE GOAL?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"There are 3 categories of goals:\\noptimization\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"hidden model parameter estimation\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"function fitting\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Optimization\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"To find the optimal input parameters for your process.\\nPredicting the output of the process for various inputs is of low priority (this would be function fitting).\\n\\nA prerequisite for this is that you can mathematically \\\"grade\\\" process iterations with a cost function.\\nOptimization means finding the inputs that minimize the cost function. If a cost function is not available, you will have to design it. \\nThe corresponding template will provide some guidelines.\\n\\nIf an iterative procedure with consecutive batches of trials is feasible, the template for optimization is best suited.\\nIf instead all trials have to be planned and/or executed in one go, the template for classical DoEs is better suited.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Hidden Model Parameter estimation\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"To estimate the value of parameters that cannot be controlled or directly measured.\\nFor example, these parameters might correspond to some real-world quantity you are interested in.\\n\\nA prerequisite is that you can express the relationship between the outcomes of a process and its adjustable parameters as a probabilistic model with model parameters.\\nThese model parameters need to:\\ninclude the parameters that you want to estimate,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"be a static property of the process itself and do not change from trial to trial,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"affect the outcome of the process.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor this goal, the template for Bayesian modelling is best suited.\\nHowever, in case all trials have to be planned and/or executed in one go, the template for classical DoEs might also be used.\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Function fitting\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"To predict the outcome of the process as a function of the input parameters as accurately as possible.\\nYou do not just want to know the best parameters, nor do you care about specific model parameters.\\n\\nFor this goal, the template for classical DoEs is best suited.\\nHowever, if you have significant prior knowledge about the process (e.g. functional relationships), the template for Bayesian modelling may be a better choice.\\n\\n\\n\\n\\n\"}]}"
+        "message": "There are 3 categories of goals:\n- optimization\n- hidden model parameter estimation\n- function fitting\n\n\n# Optimization\nTo find the optimal input parameters for your process.\nPredicting the output of the process for various inputs is of low priority (this would be function fitting).\n\nA prerequisite for this is that you can mathematically \"grade\" process iterations with a cost function.\nOptimization means finding the inputs that minimize the cost function. If a cost function is not available, you will have to design it. \nThe corresponding template will provide some guidelines.\n\nIf an iterative procedure with consecutive batches of trials is feasible, the template for optimization is best suited.\nIf instead all trials have to be planned and/or executed in one go, the template for classical DoEs is better suited.\n\n# Hidden Model Parameter estimation\nTo estimate the value of parameters that cannot be controlled or directly measured.\nFor example, these parameters might correspond to some real-world quantity you are interested in.\n\nA prerequisite is that you can express the relationship between the outcomes of a process and its adjustable parameters as a probabilistic model with model parameters.\nThese model parameters need to:\n- include the parameters that you want to estimate,\n- be a static property of the process itself and do not change from trial to trial,\n- affect the outcome of the process.\n\n\nFor this goal, the template for Bayesian modelling is best suited.\nHowever, in case all trials have to be planned and/or executed in one go, the template for classical DoEs might also be used.\n\n\n# Function fitting\nTo predict the outcome of the process as a function of the input parameters as accurately as possible.\nYou do not just want to know the best parameters, nor do you care about specific model parameters.\n\nFor this goal, the template for classical DoEs is best suited.\nHowever, if you have significant prior knowledge about the process (e.g. functional relationships), the template for Bayesian modelling may be a better choice.\n"
       },
       "edge_connections": [
         {
@@ -38,9 +38,9 @@
     },
     {
       "id": "b966e67e-7dc8-4f84-8d9c-414e9bcb5988",
-      "title": "1. Is the process suitable for DOE?",
+      "title": "1. IS THE PROCESS SUITABLE FOR DOE?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"We can distinguish between two types of processes:\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Discrete process\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Based on discrete (countable) inputs and outputs.\\nFor example, baking one bread (output) at a time using a specific flour type and temperature (inputs).\\nThe principle also works for batched discrete processes, e.g. baking 20 breads at a time with the same flour and temperature.\\n\\nDesign of experiments is very suitable for discrete processes.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Continuous process\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Based on continuous inputs and outputs.\\nFor example, having a sourdough starter that is refreshed by putting in new flour and water (inputs) and from which you regularly take out portions to make bread. You can vary the inputs over time, but affects the outputs after some delay.\\n\\nDesign of experiments for continuous processes is not straight-forward and is a matter of current research.\\nIf your process is continuous, we advise you to investigate whether the process can be approximately discretized.\\nThis usually means that you group (e.g. by averaging) your inputs and outputs over time intervals that are expected to be longer than the processes delays.\\n\\n\"}]}"
+        "message": "We can distinguish between two types of processes:\n## \n## Discrete process\nBased on discrete (countable) inputs and outputs.\nFor example, baking one bread (output) at a time using a specific flour type and temperature (inputs).\nThe principle also works for batched discrete processes, e.g. baking 20 breads at a time with the same flour and temperature.\n\nDesign of experiments is very suitable for discrete processes.\n\n## Continuous process\nBased on continuous inputs and outputs.\nFor example, having a sourdough starter that is refreshed by putting in new flour and water (inputs) and from which you regularly take out portions to make bread. You can vary the inputs over time, but affects the outputs after some delay.\n\nDesign of experiments for continuous processes is not straight-forward and is a matter of current research.\nIf your process is continuous, we advise you to investigate whether the process can be approximately discretized.\nThis usually means that you group (e.g. by averaging) your inputs and outputs over time intervals that are expected to be longer than the processes delays.\n"
       },
       "edge_connections": [
         {
@@ -78,9 +78,9 @@
     },
     {
       "id": "30d2a4b7-8488-4097-8890-4c08aa3a3072",
-      "title": "Discrete vs. continous",
+      "title": "DISCRETE VS. CONTINOUS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Is the process discrete or continuous?\\n\"}]}"
+        "message": "Is the process discrete or continuous?\n"
       },
       "edge_connections": [
         {
@@ -113,9 +113,9 @@
     },
     {
       "id": "d46d6350-7514-4f00-8ebe-a72c0d06f391",
-      "title": "Purpose of data generation",
+      "title": "PURPOSE OF DATA GENERATION",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Why do you have to generate new data?\\n\"}]}"
+        "message": "Why do you have to generate new data?\n"
       },
       "edge_connections": [
         {
@@ -148,9 +148,9 @@
     },
     {
       "id": "5c7a674a-e7f8-444f-9d24-46c25b0ac3bc",
-      "title": "4. Experiment abundancE",
+      "title": "4. EXPERIMENT ABUNDANCE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"As a rule of thumb, to get an insight on how the process outcome depends on the adjustable parameters, the number different sets of parameters to try must be larger than the number of adjustable parameters. \\n\\nThe number of trials required may be multiple times the number of parameters, if the relationship between the adjustable parameters and the outcome of the process is expected to be more complex than just a linear response, and/or if noise is significant. Having specific knowledge of the process that allows you to model the process with just a few internal model parameters, may decrease the number of trials needed.\\n\\nFor example, consider a process with n adjustable parameters and negligible noise:\\nIf you describe the process as a linear model, you need to try at least n + 1 different sets of parameters.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a simple quadratic model without mixed terms, you need 2n + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a quadratic model with mixed terms, you need n(n + 1) / 2 + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For your home-grown model with just one internal model parameter, you only need one trial.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nConversely, if you have a limited number of trials available, your model of the process should be simple. This may even mean that you keep some adjustable parameters at a fixed value and do not try to estimate their influence on the outcome.\\n\"}]}"
+        "message": "As a rule of thumb, to get an insight on how the process outcome depends on the adjustable parameters, the number different sets of parameters to try must be larger than the number of adjustable parameters. \n\nThe number of trials required may be multiple times the number of parameters, if the relationship between the adjustable parameters and the outcome of the process is expected to be more complex than just a linear response, and/or if noise is significant. Having specific knowledge of the process that allows you to model the process with just a few internal model parameters, may decrease the number of trials needed.\n\nFor example, consider a process with n adjustable parameters and negligible noise:\n- If you describe the process as a linear model, you need to try at least n + 1 different sets of parameters.\n- For a simple quadratic model without mixed terms, you need 2n + 1 trials.\n- For a quadratic model with mixed terms, you need n(n + 1) / 2 + 1 trials.\n- For your home-grown model with just one internal model parameter, you only need one trial.\n\n\nConversely, if you have a limited number of trials available, your model of the process should be simple. This may even mean that you keep some adjustable parameters at a fixed value and do not try to estimate their influence on the outcome.\n"
       },
       "edge_connections": [
         {
@@ -184,7 +184,7 @@
     },
     {
       "id": "948ab3e7-3969-418a-b521-72730f3a14e6",
-      "title": "Your answer",
+      "title": "YOUR ANSWER",
       "type_specific": {
         "message": ""
       },
@@ -215,9 +215,9 @@
     },
     {
       "id": "6ed603e6-7c67-4232-b937-9bfb80db0fce",
-      "title": "Prior Knowledge",
+      "title": "PRIOR KNOWLEDGE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Adjustable parameters and their limits:\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNon-adjustable (hidden) parameters:\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nMetric of outcome?\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "Adjustable parameters and their limits:\n- \n\n\nNon-adjustable (hidden) parameters:\n- \n\n\nMetric of outcome?\n-\n"
       },
       "edge_connections": [
         {
@@ -246,9 +246,9 @@
     },
     {
       "id": "886e2517-300e-484a-8b98-2108557a6fb1",
-      "title": "#Parameters vs. #Experiments",
+      "title": "#PARAMETERS VS. #EXPERIMENTS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Number of parameters:\\nNumber of experiments:\\n-> Number of parameters << Number of experiments?\\n\\n\"}]}"
+        "message": "Number of parameters:\nNumber of experiments:\n-> Number of parameters << Number of experiments?\n"
       },
       "edge_connections": [
         {
@@ -273,9 +273,9 @@
     },
     {
       "id": "4d313ba4-d766-4f9c-b915-3babd0fb9385",
-      "title": "5. How many iterations?",
+      "title": "5. HOW MANY ITERATIONS?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Can you repeatedly run a small batch of trials and obtain their results before deciding on the parameters for the next batch of trials?\\n\\nThen, you may choose one of the templates for iterative designs for optimization or parameter estimation.\\n\\nIf however, you prefer to plan and/or run all trials at once, one of the classical designs may be a better choice.\\n \\n\\n \\n\"}]}"
+        "message": "Can you repeatedly run a small batch of trials and obtain their results before deciding on the parameters for the next batch of trials?\n\nThen, you may choose one of the templates for iterative designs for optimization or parameter estimation.\n\nIf however, you prefer to plan and/or run all trials at once, one of the classical designs may be a better choice.\n"
       },
       "edge_connections": [
         {
@@ -309,9 +309,9 @@
     },
     {
       "id": "381c4b9a-4f92-4a2b-a27a-7fc5150a556e",
-      "title": "3. What kind of prior knowledge is to be included?",
+      "title": "3. WHAT KIND OF PRIOR KNOWLEDGE IS TO BE INCLUDED?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Prior knowledge is information about the process you have before conducting the experiment.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Basic Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Includes basic information on the process such as:\\nthe adjustable parameters and their possible values (e.g. lower and upper bounds for continuous parameters, or available choices for discrete parameters),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the metrics used to quantify the outcome of a process (e.g. the quality or production cost of an item).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThis information should be available for any DoE project \"},{\"attributes\":{\"bold\":true},\"insert\":\"before \"},{\"insert\":\"a design is created and trials are performed according to that design.\\nIf this information is missing, exploratory trials might be conducted to help decide:\\nWhich adjustable parameters are to be included in the DoE?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are the feasible values for these parameters?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are metrics to be used to quantify the process outcome?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor planning such exploratory trials, one could also use a (classical) DoE, which includes any potential adjustable parameters and outcome metrics.\\nFor many use cases, the basic information is all one has or needs as prior knowledge for the DoE.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Detailed Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"In some cases, one has much more detailed information, e.g. on\\nthe functional relationships between adjustable parameters and outcome metrics,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the non-adjustable parameters featuring in these functional relationships\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"and their values, which could be known exactly, or known to lie in a well-defined range.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor example, the outcome metrics might be well described by a linear function or second-order polynomial of the adjustable parameters with coefficients to be constrained by the experiment. Or a certain outcome metric might depend on the adjustable parameters, another outcome metric, one non-adjustable parameter, and a small white-noise term in a complicated but known manner (including e.g. products, cosines, and logarithms).\\n\\n\\n\\n\"}]}"
+        "message": "Prior knowledge is information about the process you have before conducting the experiment.\n\n# Basic Prior Knowledge\nIncludes basic information on the process such as:\n- the adjustable parameters and their possible values (e.g. lower and upper bounds for continuous parameters, or available choices for discrete parameters),\n- the metrics used to quantify the outcome of a process (e.g. the quality or production cost of an item).\n\n\nThis information should be available for any DoE project **before **a design is created and trials are performed according to that design.\nIf this information is missing, exploratory trials might be conducted to help decide:\n- Which adjustable parameters are to be included in the DoE?\n- What are the feasible values for these parameters?\n- What are metrics to be used to quantify the process outcome?\n\n\nFor planning such exploratory trials, one could also use a (classical) DoE, which includes any potential adjustable parameters and outcome metrics.\nFor many use cases, the basic information is all one has or needs as prior knowledge for the DoE.\n\n# Detailed Prior Knowledge\nIn some cases, one has much more detailed information, e.g. on\n- the functional relationships between adjustable parameters and outcome metrics,\n- the non-adjustable parameters featuring in these functional relationships\n- and their values, which could be known exactly, or known to lie in a well-defined range.\n\n\nFor example, the outcome metrics might be well described by a linear function or second-order polynomial of the adjustable parameters with coefficients to be constrained by the experiment. Or a certain outcome metric might depend on the adjustable parameters, another outcome metric, one non-adjustable parameter, and a small white-noise term in a complicated but known manner (including e.g. products, cosines, and logarithms).\n"
       },
       "edge_connections": [
         {
@@ -345,9 +345,9 @@
     },
     {
       "id": "66fce767-d0dc-4329-b4ea-e105b25235b5",
-      "title": "Checklist: Optimization",
+      "title": "CHECKLIST: OPTIMIZATION",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nThe goal is optimization.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Trials can be run in multiple consecutive batches such that results from previous batches are available for suggesting the parameters for the next batch.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nAll trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "Suitable if:\n- The goal is optimization.\n- Trials can be run in multiple consecutive batches such that results from previous batches are available for suggesting the parameters for the next batch.\n\n\nNot suitable if:\n- All trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\n"
       },
       "edge_connections": [
         {
@@ -380,9 +380,9 @@
     },
     {
       "id": "c9e417cf-9079-485d-be1c-e5a370828e12",
-      "title": "Checklist: Bayesian modelLing",
+      "title": "CHECKLIST: BAYESIAN MODELLING",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nThe relation between the outcome and the adjustable parameters of a trial can be expressed as parametrized equations.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"The goals is model parameter estimation.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nNo prior knowledge about the functional form of the process is available.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "Suitable if:\n- The relation between the outcome and the adjustable parameters of a trial can be expressed as parametrized equations.\n- The goals is model parameter estimation.\n\n\nNot suitable if:\n- No prior knowledge about the functional form of the process is available.\n"
       },
       "edge_connections": [
         {
@@ -419,9 +419,9 @@
     },
     {
       "id": "172bdc0d-eaa8-4ca0-9de0-348b91307fff",
-      "title": "Checklist: Classical Doe",
+      "title": "CHECKLIST: CLASSICAL DOE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nAll trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nTrials can be run in sequence (with previous results informing the choice of later trials), and the total number of trials should be as small as possible (e.g. if trials are expensive).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "Suitable if:\n- All trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\n\n\nNot suitable if:\n- Trials can be run in sequence (with previous results informing the choice of later trials), and the total number of trials should be as small as possible (e.g. if trials are expensive).\n"
       },
       "edge_connections": [
         {
@@ -462,7 +462,7 @@
     },
     {
       "id": "f7f239fe-5a15-464b-8bb4-4cd38d875cb9",
-      "title": "Optimization",
+      "title": "OPTIMIZATION",
       "type_specific": {
         "message": ""
       },
@@ -498,7 +498,7 @@
     },
     {
       "id": "ea2781a1-ae3e-427a-9602-234bf24a8ce3",
-      "title": "Hidden Model parAmeter Estimation",
+      "title": "HIDDEN MODEL PARAMETER ESTIMATION",
       "type_specific": {
         "message": ""
       },
@@ -534,7 +534,7 @@
     },
     {
       "id": "3a259b30-0f06-4d8c-904a-72ea0aa5124d",
-      "title": "Function fitting",
+      "title": "FUNCTION FITTING",
       "type_specific": {
         "message": ""
       },
@@ -570,7 +570,7 @@
     },
     {
       "id": "02f70820-ae31-43ca-a9b7-89d4b54b775b",
-      "title": "one",
+      "title": "ONE",
       "type_specific": {
         "message": ""
       },
@@ -602,7 +602,7 @@
     },
     {
       "id": "647963f4-8e89-4f0f-9940-60abfd4a47d1",
-      "title": "many",
+      "title": "MANY",
       "type_specific": {
         "message": ""
       },
@@ -638,9 +638,9 @@
     },
     {
       "id": "4c3806dc-e458-495d-92c4-a4160b5ee770",
-      "title": "0. How to use the board",
+      "title": "0. HOW TO USE THE BOARD",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This board guides you to a suitable design of experiments approach based on your task.\\n\\nGo through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Read the instructions on each \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"card\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Follow the arrows on the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"card most suitable to your task OR Delete \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"cards that do not relate to your task to remove possible paths\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"At the end of the tree, you will reach a \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"card that specifies a suitable design of experiments approach for your task\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "This board guides you to a suitable design of experiments approach based on your task.\n\n1. Go through the yellow cards in order\n1. Read the instructions on each yellow card\n1. Follow the arrows on the green card most suitable to your task OR Delete green cards that do not relate to your task to remove possible paths\n1. At the end of the tree, you will reach a blue card that specifies a suitable design of experiments approach for your task\n"
       },
       "edge_connections": [
         {
@@ -661,7 +661,7 @@
     },
     {
       "id": "40ad763b-d7db-425c-b847-ffa12bdf03a3",
-      "title": "Detailed Knowledge",
+      "title": "DETAILED KNOWLEDGE",
       "type_specific": {
         "message": ""
       },
@@ -693,7 +693,7 @@
     },
     {
       "id": "c41a2ece-85ff-4462-89ea-85b4233c58ce",
-      "title": "No detailed knowledge",
+      "title": "NO DETAILED KNOWLEDGE",
       "type_specific": {
         "message": ""
       },
@@ -729,7 +729,7 @@
     },
     {
       "id": "feac4a01-c973-4a50-919b-c291366db07f",
-      "title": "Discrete",
+      "title": "DISCRETE",
       "type_specific": {
         "message": ""
       },
@@ -761,9 +761,9 @@
     },
     {
       "id": "e144e182-1e37-40fa-a28a-187058dfe701",
-      "title": "Continuous",
+      "title": "CONTINUOUS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Try to make an discrete approximation.\\n\"}]}"
+        "message": "Try to make an discrete approximation.\n"
       },
       "edge_connections": [
         {
@@ -793,9 +793,9 @@
     },
     {
       "id": "ecb5fa8e-369d-4c78-aa69-b2384c732148",
-      "title": "Feasibility Check",
+      "title": "FEASIBILITY CHECK",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"If detailed knowledge on the relationships between adjustable parameters and outcome metrics is available, one may construct a Bayesian model capturing these relationships, and use that model to guide the DoE. However, taking these steps has to be justified:\\n\\nIf the resulting model has many non-adjustable parameters that need to be constrained by the experiment, but one can only perform a few trials, then including this complex Bayesian model in the DoE like does not yield any benefits.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"If the goal is to determine the value for a certain non-adjustable parameter of the model, then there is no way around constructing this model, and fitting it to the trial results. In that case, one may consider to also use the model for finding an experimental design optimized to constrain the parameter of interest.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "If detailed knowledge on the relationships between adjustable parameters and outcome metrics is available, one may construct a Bayesian model capturing these relationships, and use that model to guide the DoE. However, taking these steps has to be justified:\n\n- If the resulting model has many non-adjustable parameters that need to be constrained by the experiment, but one can only perform a few trials, then including this complex Bayesian model in the DoE like does not yield any benefits.\n- If the goal is to determine the value for a certain non-adjustable parameter of the model, then there is no way around constructing this model, and fitting it to the trial results. In that case, one may consider to also use the model for finding an experimental design optimized to constrain the parameter of interest.\n"
       },
       "edge_connections": [
         {
@@ -826,7 +826,7 @@
       "id": "73cc682e-123d-4eac-bf0e-32ea0c46692d",
       "title": "6. ADD TEMPLATE USING ADD TEMPLATE WIZARD",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"After you have selected a suitable approach, you may add the template for that approach.\\n\\nIn the '+' menu in the file browser on the top left, select the design of experiments approach template.\\n\\nThe available selections are:\\n1-bayesian_optimization\\n2-classical_doe\\n3-bayesian_modelling\\n\"}]}"
+        "message": "After you have selected a suitable approach, you may add the template for that approach.\n\nIn the '+' menu in the file browser on the top left, select the design of experiments approach template.\n\nThe available selections are:\n1-bayesian_optimization\n2-classical_doe\n3-bayesian_modelling\n"
       },
       "edge_connections": [
         {
