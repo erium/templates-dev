@@ -339,6 +339,23 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Workflow",
+            "description": "Templates facilitating the Halerium workflow",
+            "templates": [
+                {
+                    "name": "New Product",
+                    "isOverview": false,
+                    "description": "Folder structure for a new data analysis product.",
+                    "folderName": "new product {{timestamp}}",
+                    "command": "--no-input --directory use_case_templates/new_product --output-dir {{output-dir}} product_name=folderName",
+                    "files": [
+                        {
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

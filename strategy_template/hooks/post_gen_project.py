@@ -13,3 +13,4 @@ for f in os.listdir('./'):
 
 path = Path('./').resolve()
 shutil.rmtree(path)
+
