@@ -346,13 +346,11 @@
             "templates": [
                 {
                     "name": "Data Project Workspace",
-                    "isOverview": true,
+                    "isOverview": false,
                     "description": "All files and folders for a data project workspace",
                     "folderName": "{{timestamp}} Data Project",
                     "command": "-no-input --directory workflow_templates/project_template folder_name=__new_workspace__ workspace_name='New Workspace'",
                     "files": [
-                        {
-                        }
                     ]
                 },
                 {
@@ -362,8 +360,6 @@
                     "folderName": "{{timestamp}} Data Strategy",
                     "command": "--no-input --directory workflow_templates/strategy_workspace workspace_name=DataStrategy",
                     "files": [
-                        {
-                        }
                     ]
                 },
                 {
@@ -373,8 +369,6 @@
                     "folderName": "new prototype {{timestamp}}",
                     "command": "--no-input --directory workflow_templates/new_prototype --output-dir {{output-dir}} prototype_name=folderName",
                     "files": [
-                        {
-                        }
                     ]
                 },
                 {
@@ -384,8 +378,6 @@
                     "folderName": "{{timestamp}} Data Strategy Workshop",
                     "command": "--no-input --directory workflow_templates/new_workshop --output-dir {{output-dir}} file_name=folderName",
                     "files": [
-                        {
-                        }
                     ]
                 }
             ]
