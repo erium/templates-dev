@@ -349,7 +349,7 @@
                     "isOverview": false,
                     "description": "All files and folders for a data project workspace",
                     "folderName": "{{timestamp}} Data Project",
-                    "command": "-no-input --directory workflow_templates/project_template folder_name=__new_workspace__ workspace_name='New Workspace'",
+                    "command": "-no-input --directory workflow_templates/project_template --output-dir {{output-dir}} folder_name=__new_workspace__ workspace_name='New Workspace'",
                     "files": [
                     ]
                 },
@@ -358,7 +358,7 @@
                     "isOverview": false,
                     "description": "All files and folders of the data strategy workspace",
                     "folderName": "{{timestamp}} Data Strategy",
-                    "command": "--no-input --directory workflow_templates/strategy_workspace workspace_name=DataStrategy",
+                    "command": "--no-input --directory workflow_templates/strategy_workspace --output-dir {{output-dir}} workspace_name=DataStrategy",
                     "files": [
                     ]
                 },
@@ -367,7 +367,7 @@
                     "isOverview": false,
                     "description": "Folder structure for a new data analysis prototype.",
                     "folderName": "new prototype {{timestamp}}",
-                    "command": "--no-input --directory workflow_templates/new_prototype --output-dir {{output-dir}} prototype_name=folderName",
+                    "command": "--no-input --directory workflow_templates/new_prototype --output-dir {{output-dir}} prototype_name='new prototype {{timestamp}}'",
                     "files": [
                     ]
                 },
@@ -376,7 +376,7 @@
                     "isOverview": false,
                     "description": "Board for a new data strategy workshop",
                     "folderName": "{{timestamp}} Data Strategy Workshop",
-                    "command": "--no-input --directory workflow_templates/new_workshop --output-dir {{output-dir}} file_name=folderName",
+                    "command": "--no-input --directory workflow_templates/new_workshop --output-dir {{output-dir}} file_name='{{timestamp}} Data Stragey Workshop'",
                     "files": [
                     ]
                 }
