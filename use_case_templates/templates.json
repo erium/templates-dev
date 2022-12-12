@@ -376,7 +376,7 @@
                     "isOverview": false,
                     "description": "Board for a new data strategy workshop",
                     "folderName": "{{timestamp}} Data Strategy Workshop",
-                    "command": "--no-input --directory workflow_templates/new_workshop --output-dir '{{output-dir}}' file_name='{{timestamp}} Data Stragey Workshop'",
+                    "command": "--no-input --directory workflow_templates/new_workshop --output-dir '{{output-dir}}' file_name='{{timestamp}} Data Strategy Workshop'",
                     "files": [
                     ]
                 }
