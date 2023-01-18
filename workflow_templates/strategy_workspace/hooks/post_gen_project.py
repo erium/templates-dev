@@ -8,12 +8,9 @@ hu.file.assign_new_card_ids_to_tree('./')
 
 
 # To move directory one up
-#for f in os.listdir('./'):
-#    shutil.move(f, '../')
-    
-with open('test', 'w') as f:
-    f.write('hello world')
+for f in os.listdir('./'):
+    shutil.move(f, '../')
 
-#path = Path('./').resolve()
-#shutil.rmtree(path)
+path = Path('./').resolve()
+shutil.rmtree(path)
 
