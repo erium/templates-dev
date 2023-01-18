@@ -9,8 +9,8 @@ try:
 
 
     # To move directory one up
-    for f in os.listdir('./'):
-        shutil.move(f, '../')
+    #for f in os.listdir('./'):
+    #    shutil.move(f, '../')
 
     path = Path('./').resolve()
     #shutil.rmtree(path)
