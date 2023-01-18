@@ -14,7 +14,10 @@ try:
 
     path = Path('./').resolve()
     shutil.rmtree(path)
+    
+    open("success", "w") as f:
+        f.write("done")
 
 except Exception as exc:
-    open("result", "w") as f:
+    open("fail", "w") as f:
         f.write(repr(exc))
