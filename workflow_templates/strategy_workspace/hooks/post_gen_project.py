@@ -15,7 +15,7 @@ try:
     path = Path('./').resolve()
     shutil.rmtree(path)
     
-    raise Exception
+    raise Exception(str(path))
 
 except Exception as exc:
     with open("../fail", "w") as f:
