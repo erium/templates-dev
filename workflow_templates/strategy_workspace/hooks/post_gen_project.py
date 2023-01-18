@@ -18,11 +18,11 @@ try:
     raise Exception(str(path))
 
 except Exception as exc:
-    try:
-        with open("../fail", "w") as f:
-            f.write(repr(exc))
-    except:
-        pass
+#    try:
+#        with open("../fail", "w") as f:
+#            f.write(repr(exc))
+#    except:
+#        pass
     try:
         with open("fail", "w") as f:
             f.write(repr(exc))
