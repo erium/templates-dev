@@ -13,7 +13,7 @@ try:
         shutil.move(f, '../')
 
     path = Path('./').resolve()
-    shutil.rmtree(path)
+    #shutil.rmtree(path)
     
     raise Exception(str(path))
 
