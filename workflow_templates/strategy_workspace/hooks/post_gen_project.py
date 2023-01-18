@@ -11,7 +11,7 @@ hu.file.assign_new_card_ids_to_tree('./')
 #for f in os.listdir('./'):
 #    shutil.move(f, '../')
 
-path = Path('./').resolve()
+#path = Path('./').resolve()
 #shutil.rmtree(path)
 
 
