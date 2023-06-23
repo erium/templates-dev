@@ -6,8 +6,14 @@
             "name": "Overview",
             "isOverview": true,
             "description": "Overview board for prediction templates",
-            "folderName": "{{timestamp}}-{{user.initials}}-prediction_overview",
-            "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=prediction_overview",
+            "automaticArguments": {
+                "use_case_name": "prediction_overview",
+                "author_name": "{{user.name}}",
+                "author_initials": "{{user.initials}}",
+                "timestamp": "{{timestamp}}"
+            },
+            "userArguments": {
+            },
             "files": [
                 {
                     "type": "board",
@@ -20,8 +26,14 @@
             "name": "Regression",
             "isOverview": false,
             "description": "To estimate the relationships between a dependent variable and one or more independent variables",
-            "folderName": "{{timestamp}}-{{user.initials}}-regression",
-            "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=regression",
+            "automaticArguments": {
+                "use_case_name": "regression",
+                "author_name": "{{user.name}}",
+                "author_initials": "{{user.initials}}",
+                "timestamp": "{{timestamp}}"
+            },
+            "userArguments": {
+            },
             "files": [
                 {
                     "type": "board",
@@ -30,7 +42,27 @@
                 },
                 {
                     "type": "notebook",
-                    "path": "regression.ipynb"
+                    "path": "regression.ipynb",
+                    "active": true
+                }
+            ]
+        },
+        {
+            "name": "Simple Prediction",
+            "isOverview": false,
+            "description": "To perform simple regression and classification with keras and scikit-learn models without parameter tuning and preprocessing",
+            "automaticArguments": {
+                "use_case_name": "simple_prediction",
+                "author_name": "{{user.name}}",
+                "author_initials": "{{user.initials}}",
+                "timestamp": "{{timestamp}}"
+            },
+            "userArguments": {
+            },
+            "files": [
+                {
+                    "type": "notebook",
+                    "path": "simple_prediction.ipynb",
                     "active": true
                 }
             ]

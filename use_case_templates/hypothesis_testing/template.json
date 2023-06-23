@@ -6,8 +6,14 @@
             "name": "Overview",
             "isOverview": true,
             "description": "Overview board for hypothesis testing templates",
-            "folderName": "{{timestamp}}-{{user.initials}}-hypothesis_testing_overview",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=hypothesis_testing_overview",
+            "automaticArguments": {
+                "use_case_name": "hypothesis_testing_overview",
+                "author_name": "{{user.name}}",
+                "author_initials": "{{user.initials}}",
+                "timestamp": "{{timestamp}}"
+            },
+            "userArguments": {
+            },
             "files": [
                 {
                     "type": "board",
@@ -20,8 +26,14 @@
             "name": "Classical Hypothesis Testing",
             "isOverview": false,
             "description": "To use statistical tests to infer if the data supports a certain hypothesis",
-            "folderName": "{{timestamp}}-{{user.initials}}-classical_ht",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=classical_ht",
+            "automaticArguments": {
+                "use_case_name": "classical_ht",
+                "author_name": "{{user.name}}",
+                "author_initials": "{{user.initials}}",
+                "timestamp": "{{timestamp}}"
+            },
+            "userArguments": {
+            },
             "files": [
                 {
                     "type": "board",
@@ -39,8 +51,14 @@
             "name": "Causal Hypothesis Testing",
             "isOverview": false,
             "description": "To model good fitting causal structures and obtain causal estimates",
-            "folderName": "{{timestamp}}-{{user.initials}}-causal",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=causal",
+            "automaticArguments": {
+                "use_case_name": "causal",
+                "author_name": "{{user.name}}",
+                "author_initials": "{{user.initials}}",
+                "timestamp": "{{timestamp}}"
+            },
+            "userArguments": {
+            },
             "files": [
                 {
                     "type": "board",
@@ -66,8 +84,14 @@
             "name": "Equation Hypothesis Testing",
             "isOverview": false,
             "description": "To test if a hypothesis in the form of an equation fits the data well",
-            "folderName": "{{timestamp}}-{{user.initials}}-equation",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=equation",
+            "automaticArguments": {
+                "use_case_name": "equation",
+                "author_name": "{{user.name}}",
+                "author_initials": "{{user.initials}}",
+                "timestamp": "{{timestamp}}"
+            },
+            "userArguments": {
+            },
             "files": [
                 {
                     "type": "board",

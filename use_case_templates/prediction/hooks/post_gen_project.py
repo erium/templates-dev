@@ -5,7 +5,7 @@ from halerium_utilities import notebook
 
 # Select the specified template
 model_templates = '{{cookiecutter.use_case_slug}}'
-all_templates = ['regression', 'prediction_overview']
+all_templates = ['regression', 'prediction_overview', 'simple_prediction']
 for template in all_templates:
     if template != model_templates:
         shutil.rmtree('./' + template)

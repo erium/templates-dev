@@ -1,3 +1,4 @@
 {
-  "file_name": "YYYY-MM-DD Data Strategy Workshop"
+  "timestamp": "YYYY-MM-DD",
+  "file_name": "{{cookiecutter.timestamp}} Data Strategy Workshop"
 }
