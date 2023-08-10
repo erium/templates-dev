@@ -1,5 +1,5 @@
 {
-    "name": "Blogbost with Image Generator",
+    "name": "Blogpost with Image Generator",
     "isOverview": false,
     "description": "Use Text- and Imagebots to generate a Blogpost on any topic.",
     "automaticArguments": {
