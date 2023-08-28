@@ -97,6 +97,34 @@
             "description": "Boards with Prompt-Trees for generic tasks.",
             "templates": [
                 {
+                    "name": "Document Chatbot",
+                    "isOverview": false,
+                    "description": "Perform document-based inquiries, providing instant, accurate responses based on the content of specific documents.",
+                    "automaticArguments": {
+                        "author_name": "{{user.name}}",
+                        "author_initials": "{{user.initials}}",
+                        "timestamp": "{{timestamp}}",
+                        "source_directory": "generic/document_chatbot",
+                        "target_directory": "{{directoryPath}}"
+                    },
+                    "userArguments": {},
+                    "files": []
+                },
+                {
+                    "name": "Meeting Report Generator",
+                    "isOverview": false,
+                    "description": "Efficiently capture, organize, and present key takeaways, decisions, and action items from meetings.",
+                    "automaticArguments": {
+                        "author_name": "{{user.name}}",
+                        "author_initials": "{{user.initials}}",
+                        "timestamp": "{{timestamp}}",
+                        "source_directory": "generic/meeting_report_generator",
+                        "target_directory": "{{directoryPath}}"
+                    },
+                    "userArguments": {},
+                    "files": []
+                },
+                {
                     "name": "Bot vs Bot",
                     "isOverview": false,
                     "description": "Use two bots to complete a task.",
