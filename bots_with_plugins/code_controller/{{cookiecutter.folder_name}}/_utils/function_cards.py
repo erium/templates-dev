@@ -130,7 +130,7 @@ class FunctionCards:
         for fname, fdata in self.functions.items():
             content = {
                 "endpoint": {
-                    "url": f"https://pro.halerium.ai/apps/{self.runner_id}/{str(self.port)}/{fname}"
+                    "url": f"{os.getenv('HALERIUM_BASE_URL')}/apps/{self.runner_id}/{str(self.port)}/{fname}"
                 },
                 "function": {
                     "name": fname,

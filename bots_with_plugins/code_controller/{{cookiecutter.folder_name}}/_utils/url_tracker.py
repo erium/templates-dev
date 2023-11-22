@@ -92,6 +92,8 @@ class UrlTracker:
                 # export board
                 with open(b, 'w') as f:
                     json.dump(board, f, indent=4, ensure_ascii=False)
+                
+                print(f'Updated {b.name}')
 
         else:
             print(f'Path {self.path} does not exist.')
