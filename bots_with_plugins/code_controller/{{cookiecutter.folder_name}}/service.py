@@ -77,6 +77,8 @@ def execute_kernel_command():
         if 'command' in data and data['command']:
             command = data['command']
             kernel = IPKernelApp.instance()
+            if kernel.shell is None:
+                return jsonify({'error': f'kernel has to be started first!'})
 
             # Redirect stdout and stderr to the buffers
             with redirect_stdout(stdout_buffer), redirect_stderr(stderr_buffer):
@@ -170,7 +172,7 @@ def pip_install():
         if 'package' in data:
             package = data['package']
             #command = f"pip install -q {package}"
-            command = ["pip", "install", package]
+            command = ["pip", "install", "-q", package]
 
             # open subprocess and pipe stdout and stderr
             with subprocess.Popen(command, stdout=PIPE, stderr=PIPE) as proc:
