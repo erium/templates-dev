@@ -1,6 +1,17 @@
 {
     "categories": [
         {
+            "name": "Sales",
+            "description": "Snippets to streamline the sales process.",
+            "snippets": [
+                {
+                    "name": "Sales Meeting Analyzer",
+                    "description": "Extracts actionable summaries from sales meeting minutes or transcripts for quick reference and follow-up questions.",
+                    "path": "snippets/04_sales/sales_meeting_analyzer/snippet.board"
+                }
+            ]
+        },
+        {
             "name": "Essentials",
             "description": "Fundamental tools for creating workflows and understanding board structures.",
             "snippets": [
@@ -60,17 +71,6 @@
                     "name": "Python Developer",
                     "description": "A coding assistant for the Python programming language.",
                     "path": "snippets/05_coding_and_data/python_developer/snippet.board"
-                }
-            ]
-        },
-        {
-            "name": "Sales",
-            "description": "Snippets to streamline the sales process.",
-            "snippets": [
-                {
-                    "name": "Sales Meeting Analyzer",
-                    "description": "Extracts actionable summaries from sales meeting minutes or transcripts for quick reference and follow-up questions.",
-                    "path": "snippets/04sales/sales_meeting_analyzer/snippet.board"
                 }
             ]
         }
