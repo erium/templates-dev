@@ -5,6 +5,11 @@
             "description": "Fundamental tools for creating workflows and understanding board structures.",
             "snippets": [
                 {
+                    "name": "Hal-E - your Halerium support bot",
+                    "description": "Hal-E can advise you in using Halerium.",
+                    "path": "snippets/01_essentials/00_hal_e/snippet.board"
+                },
+                {
                     "name": "Bot with context",
                     "description": "Basic building block for workflows.",
                     "path": "snippets/01_essentials/01_bot_with_context/snippet.board"
