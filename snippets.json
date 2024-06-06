@@ -124,7 +124,7 @@
             "description": "Snippets to streamline the sales process.",
             "snippets": [
                 {
-                    "name": "Sales Meeting Anlayzer",
+                    "name": "Sales Meeting Analyzer",
                     "description": "Anlayze your meetings and give you insights about your sales calls.",
                     "path": "snippets/05_sales/01_sales_meeting_anlayzer/snippet.board"
                 },
@@ -132,11 +132,6 @@
                     "name": "Sales Email Writer",
                     "description": "Extracts actionable summaries and generate a sales email.",
                     "path": "snippets/05_sales/02_sales_email_writer/snippet.board"
-                },
-                {
-                    "name": "Sales Meeting Minutes Generator",
-                    "description": "Extracts actionable summaries from sales meeting for quick reference and follow-up questions.",
-                    "path": "snippets/05_sales/03_sales_meeting_minutes_generator/snippet.board"
                 }
             ]
         },
