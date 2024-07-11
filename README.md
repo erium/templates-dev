@@ -71,7 +71,7 @@
      - Click on the "New branch" button.
      - Enter a name for your branch (e.g.,update-snippets-<sprint-cycle>).
      - Click "Create branch" (Ensure that your branch is based of `dev`).
-  **Clone the branch repository locally and work with it**
+  - **Clone the branch repository locally and work with it**
    - **Upload Snippets:**
      - Add all the snippets to this new branch under snippets folder.
    - **Testing Folder:**
@@ -94,6 +94,7 @@
         'Fast Email Writer',
         'Advanced Email Writer',
     ]
+        }
     ```
 
 #### 8. **Merge Request and Finalization**
