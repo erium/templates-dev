@@ -66,7 +66,12 @@
    - **Navigate to GitLab:**
      - Go to GitLab at https://gitlab.com/erium/templates.
    - **Create a New Branch:**
-     - Create a new branch based on `dev`.
+     - Branch Creation: In the repository, create a new branch to push the snippet update update. This ensures that your changes are isolated and can be reviewed before merging into the main branch. 
+     - Click on the "Branches" tab.
+     - Click on the "New branch" button.
+     - Enter a name for your branch (e.g.,update-snippets-<sprint-cycle>).
+     - Click "Create branch" (Ensure that your branch is based of `dev`).
+  **Clone the branch repository locally and work with it**
    - **Upload Snippets:**
      - Add all the snippets to this new branch under snippets folder.
    - **Testing Folder:**
