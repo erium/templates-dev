@@ -6,7 +6,7 @@ from halerium_utilities.board import Board
 # assign new card ids
 hu.file.assign_new_card_ids_to_tree('./')
 
-target_id = "{{cookiecutter.chatbot_card_id}}"
+target_id = "{{cookiecutter.chatBotCardID}}"
 try:
     target_id = str(uuid.UUID(target_id, version=4))
 except:
