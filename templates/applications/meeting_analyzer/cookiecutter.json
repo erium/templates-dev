@@ -1,4 +1,5 @@
 {
   "folder_name": "meeting_analyzer",
-  "chatBotCardID": ""
+  "chatBotCardID": "",
+  "summaryStoreID": ""
 }

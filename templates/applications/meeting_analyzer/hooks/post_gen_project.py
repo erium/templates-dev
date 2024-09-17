@@ -26,4 +26,27 @@ for edge in board.connections:
         edge.connections.target.id = target_id
 board.to_json(board_path)
 
+# replace placeholder store_id
+store_id = "{{cookiecutter.summaryStoreID}}"
+try:
+    store_id = str(uuid.UUID(store_id, version=4))
+except:
+    # set to none if no valid id given
+    store_id = None
+
+placeholder_store_id = "000000"
+for board_path in ("chatbot.board", "template.board"):
+    board = hu.board.Board.from_json(board_path)
+    for card in board.cards:
+        if card.type == "setup":
+            if "store_uuids" in card.type_specific.setup_args:
+                if placeholder_store_id in card.type_specific.setup_args["store_uuids"]:
+                    index = card.type_specific.setup_args["store_uuids"].index(placeholder_store_id)
+                    if store_id:
+                        card.type_specific.setup_args["store_uuids"][index] = store_id
+                    else:
+                        # remove placeholder if store_id is none
+                        card.type_specific.setup_args["store_uuids"].pop(index)
+    board.to_json(board_path)
+
 print("Hal_Magic_Template_done.")
