@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "index": 0,
+      "name": "Basic",
+      "description": "Fundamental tools for getting started with Halerium.",
+      "halEList": [
+        {
+          "index": 0,
+          "name": "Custom Agent Chat",
+          "description": "Get you started with chatting with a custom agent.",
+          "halEPath": "00_basics/00_custom_agent/hal-e.board"
+        },
+        {
+          "index": 1,
+          "name": "Meeting Analyzer",
+          "description": "Condenses key points from meetings into actionable summaries and allows follow up questions.",
+          "halEPath": "00_basics/01_meeting_analyzer/hal-e.board"
+        },
+        {
+          "index": 0,
+          "name": "Email Response Writer",
+          "description": "Composes emails with a consistent tone and style based on an email chain and predefined style parameters.",
+          "halEPath": "00_basics/02_email_response_writer/hal-e.board"
+        }
+      ]
+    }
+  ]
+}
