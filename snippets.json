@@ -26,34 +26,14 @@
             "description": "Fundamental tools for creating workflows and understanding board structures.",
             "snippets": [
                 {
-                    "name": "Hal-E - your Halerium support bot",
-                    "description": "Hal-E can advise you in using Halerium.",
-                    "path": "snippets/01_essentials/00_hal_e/snippet.board"
-                },
-                {
                     "name": "Bot with context",
                     "description": "Basic building block for workflows.",
                     "path": "snippets/01_essentials/01_bot_with_context/snippet.board"
                 },
                 {
-                    "name": "Board Creator",
-                    "description": "Create new board based on the description",
-                    "path": "snippets/01_essentials/02_board_creator/snippet.board"
-                },
-                {
                     "name": "Board Interpreter",
                     "description": "Provides explanations of boards and their functionality.",
                     "path": "snippets/01_essentials/03_board_interpreter/snippet.board"
-                },
-                {
-                    "name": "Bot Personality Generator",
-                    "description": "Defines task specific roles and behaviours for Bots.",
-                    "path": "snippets/01_essentials/04_bot_personality_generator/snippet.board"
-                },
-                {
-                    "name": "Image Generator",
-                    "description": "Generates image based on description provided",
-                    "path": "snippets/01_essentials/05_Image_Generator/snippet.board"
                 },
                 {
                     "name": "Questionnaire Chatbot",
