@@ -15,33 +15,6 @@
                     "path": "snippets/canvas_templates/value_proposition_canvas/snippet.board"
                 }
             ]
-        },
-        {
-            "name": "Communication & Administration",
-            "description": "Tools for managing communication and administrative tasks.",
-            "snippets": [
-                {
-                    "name": "Email Response Writer",
-                    "description": "Automates e-mail responses.",
-                    "path": "snippets/communication_and_administration/email_response_writer/snippet.board"
-                },
-                {
-                    "name": "Meeting Analyzer",
-                    "description": "Analyzes meeting minutes for important information.",
-                    "path": "snippets/communication_and_administration/meeting_analyzer/snippet.board"
-                }
-            ]
-        },
-        {
-            "name": "Custom Hal-E board",
-            "description": "Custom templates and boards for the Hal-E support bot.",
-            "snippets": [
-                {
-                    "name": "Custom Hal-E board",
-                    "description": "A custom board for the Hal-E support bot.",
-                    "path": "snippets/custom_hal_e/custom_hal_e_board/snippet.board"
-                }
-            ]
         }
     ]
 }
